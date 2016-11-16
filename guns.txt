@@ -1,0 +1,48 @@
+PISTOLS
+Glock - glock
+P2000 - glock
+Usp(w. silencer) - usp_silencer (glock also works)
+P250 - p250
+CZ-75 - fn57 / tec9
+Fiveseven - fn57
+Tec9 - tec9
+Dual berettas - elite
+Desert eagle - deagle
+
+Heavy
+Nova - nova
+XM1014 - xm1014
+Sawedoff - mag7
+Mag7 - mag7
+M249 - m249
+Negev - negev
+
+SMG
+Mp9 - mp9
+Mac-10 - mp9
+Mag7 - mag7
+UMP45 - ump45
+P90 - p90
+Bizon - bizon
+
+Rifles
+Famas - famas
+Galil - galil
+Ak47 - ak47
+M4A1-S/M4A4 - m4a1
+SSG08 - ssg08
+SG553 - sg556
+AWP - awp
+G3SG1 - g3sg1
+Scar - scar20
+
+Gear/Nades
+HE - hegrenade
+Flashbang - flashbang
+Smoke - smokegrenade
+Decoy - decoy
+Incendiary -
+Molotov
+Kevlar vest - vest
+Kevlar+Helmet - vesthelm
+Defuse Kit - defuser

@@ -1,0 +1,195 @@
+﻿<Window x:Class="Simiancage_CSGO_BuyScript_Maker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simiancage_CSGO_BuyScript_Maker"
+        mc:Ignorable="d"
+        Title="CSGO:Bind Maker Simiancage.org" Height="351" Width="510" MinWidth="510" MinHeight="351" BorderThickness="0" WindowStyle="ThreeDBorderWindow" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF2E2D2D"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Menu IsMainMenu="True" Margin="0,0,0,283" Grid.ColumnSpan="2">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFD8730E" Offset="0.623"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem Header="_About" Click="MenuItem_Click"></MenuItem>
+            <MenuItem Header="Settings" Click="MenuItem_Click_1"></MenuItem>
+        </Menu>
+        <Rectangle HorizontalAlignment="Left" Height="256" Margin="215,54,0,0" Stroke="Black" VerticalAlignment="Top" Width="270" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD8730E" Offset="0.823"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="104" Margin="10,206,0,0" Stroke="Black" VerticalAlignment="Top" Width="181" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD8730E" Offset="0.823"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="73" Margin="10,128,0,0" Stroke="Black" VerticalAlignment="Top" Width="181" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD8730E" Offset="0.823"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="50" Margin="10,42,0,0" VerticalAlignment="Top" Width="200" Source="Simiancage Logo.png" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="             Pick a Key To Bind" HorizontalAlignment="Left" Height="24" Margin="20,136,0,0" VerticalAlignment="Top" Width="160" FontSize="10" Grid.ColumnSpan="2"/>
+
+
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="25" Margin="53,160,0,0" VerticalAlignment="Top" Width="90" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="Num_Pad" HorizontalAlignment="Left" Width="92" IsEnabled="False"/>
+            <ComboBoxItem Content="--------------------------------------" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="kp_home" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_uparrow" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_pgup" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_slash" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_multiply" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_minus" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_plus" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_enter" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_rightarrow" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_5" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_leftarrow" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_pgdn" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_del" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_ins" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_downarrow" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="kp_end" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="AlphaNumeric Keys" HorizontalAlignment="Left" Width="92" IsEnabled="False"/>
+            <ComboBoxItem Content="--------------------------------------" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="a" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="b" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="c" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="d" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="e" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="f" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="g" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="h" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="i" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="j" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="k" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="l" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="m" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="n" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="o" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="p" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="q" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="r" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="s" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="t" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="u" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="v" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="w" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="x" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="y" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="z" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="6" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="7" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="8" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="9" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="0" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+
+
+
+
+        <Label x:Name="label_Copy" Content="Copy This bind To Your CFG File Or Console" HorizontalAlignment="Left" Height="26" Margin="20,216,0,0" VerticalAlignment="Top" Width="160" FontSize="7" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="43" Margin="20,242,0,0" TextWrapping="Wrap" Text="Command Will Be Here" VerticalAlignment="Top" Width="160" Grid.ColumnSpan="2"/>
+
+
+
+
+
+        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="240,78,0,0" VerticalAlignment="Top" Width="226" Grid.ColumnSpan="2" Height="26">
+            <ComboBoxItem Content="None" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Rifles" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="--------------------------------------" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="AK-47/M4A1-S" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="AWP" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Famas/Galil-AR" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="SSG 08" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="SG 553/AUG" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="G3SG1/Scar-20" HorizontalAlignment="Left" Width="118"/>
+
+            <ComboBoxItem Content="SMG" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="--------------------------------------" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="Mac-10/MP-9" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="MP-7" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="P90" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="PP-Bizion" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="UMP-45" HorizontalAlignment="Left" Width="118"/>
+
+            <ComboBoxItem Content="Heavy" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="--------------------------------------" HorizontalAlignment="Left" Width="118" IsEnabled="False"/>
+            <ComboBoxItem Content="Nova" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="XM-1014" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Mag-7/Sawed-Off" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="M249" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Negev" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+
+
+
+
+
+        <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="240,128,0,0" VerticalAlignment="Top" Width="226" Grid.ColumnSpan="2" Height="27">
+            <ComboBoxItem Content="None" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="USP-S/P2000/Glock-18" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="P250" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Dual Berettas" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="FiveSeven/Tec-9/CZ75-auto" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="R8-Revolver/Degale" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+
+
+        <CheckBox x:Name="checkBox" Content="Kevlar" HorizontalAlignment="Left" Margin="250,165,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" IsChecked="False" Height="15" Width="52"/>
+        <CheckBox x:Name="checkBox1" Content="W/ Helmet" HorizontalAlignment="Left" Margin="339,165,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" IsChecked="False" Height="15" Width="78"/>
+
+        <CheckBox x:Name="checkBox2" Content="Defuse Kit" HorizontalAlignment="Left" Margin="250,186,0,0" VerticalAlignment="Top" Grid.Column="1" IsChecked="False" Height="15" Width="74"/>
+
+        <CheckBox x:Name="checkBox3" Content="Grenade" HorizontalAlignment="Left" Margin="339,226,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"  IsChecked="False" Height="15" Width="65"/>
+
+        <CheckBox x:Name="checkBox4" Content="FlashBang" HorizontalAlignment="Left" Margin="250,226,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" IsChecked="False" Height="15" Width="74"/>
+        <CheckBox x:Name="checkBox5" Content="Flame" HorizontalAlignment="Left" Margin="339,206,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" IsChecked="False" Height="15" Width="51"/>
+        <CheckBox x:Name="checkBox6" Content="FlashBang" HorizontalAlignment="Left" Margin="250,206,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" IsChecked="False" Height="15" Width="74"/>
+        <CheckBox x:Name="checkBox7" Content="Smoke" HorizontalAlignment="Left" Margin="414,206,0,0" VerticalAlignment="Top" Grid.Column="1" IsChecked="False" Height="15" Width="56"/>
+        <CheckBox x:Name="checkBox8" Content="Decoy" HorizontalAlignment="Left" Margin="414,226,0,0" VerticalAlignment="Top" Grid.Column="1" IsChecked="False" Height="15" Width="53"/>
+
+
+
+
+        <Label x:Name="label_Copy1" Content="             Pick a Primary Gun" HorizontalAlignment="Left" Height="24" Margin="270,54,0,0" VerticalAlignment="Top" Width="160" FontSize="10" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy2" Content="             Pick a Pistol" HorizontalAlignment="Left" Height="24" Margin="285,104,0,0" VerticalAlignment="Top" Width="160" FontSize="10" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Grid.ColumnSpan="2" Content="Generate Bind" HorizontalAlignment="Left" Height="38" Margin="240,256,0,0" VerticalAlignment="Top" Width="226" Click="button_Click_1"/>
+        <CheckBox x:Name="checkBox9" Content="Zeus x27" HorizontalAlignment="Left" Margin="339,185,0,0" VerticalAlignment="Top" Grid.Column="1" IsChecked="False" Height="15" Width="74"/>
+
+    </Grid>
+</Window>
